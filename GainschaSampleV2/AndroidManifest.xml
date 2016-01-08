@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gainscha.sample"
+    android:versionCode="14050900"
+    android:versionName="2.2" >
+
+    <uses-sdk
+        android:minSdkVersion="12"
+        android:targetSdkVersion="12" />
+	
+	<uses-permission android:name="android.permission.INTERNET" />
+    
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.gainscha.sample.SampleCodeActivity"
+            android:label="@string/app_name" 
+            android:configChanges="keyboardHidden|orientation" 
+            android:screenOrientation="landscape" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+		    <intent-filter>
+		        <action android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" />
+		    </intent-filter>
+		    <meta-data android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"
+		        android:resource="@xml/device_filter" />
+        </activity>
+        <activity android:name="com.posin.filebrowser.FileBrowser"></activity>
+    </application>
+
+</manifest>

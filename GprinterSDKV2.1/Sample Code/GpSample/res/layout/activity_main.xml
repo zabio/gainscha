@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="#00bfff"
+	android:orientation="vertical">
+    <Button
+        android:id="@+id/btOpenDialogue"
+        android:layout_width="300dip"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dip"
+        android:layout_marginLeft="135dip"
+        android:background="#00A398"
+        android:onClick="openPortDialogueClicked"
+        android:text="Open connect dialogue" />
+    <Button 
+        android:id="@+id/btPrintTestPage"
+        android:layout_width="300dip"
+        android:layout_marginTop="10dip"
+        android:layout_marginLeft="135dip"
+        android:layout_height="wrap_content"
+        android:background="#00A398"
+        android:text="Print test page"
+        android:onClick="printTestPageClicked"
+        />
+       <Button 
+        android:id="@+id/btGetStatus"
+        android:layout_width="300dip"
+        android:layout_marginTop="10dip"
+        android:layout_marginLeft="135dip"
+        android:layout_height="wrap_content"
+        android:background="#00A398"
+        android:text="Get printer status"
+         android:onClick="getPrinterStatusClicked"
+        />  
+         <Button 
+        android:id="@+id/btGetPrinterCommandType"
+        android:layout_width="300dip"
+        android:layout_marginTop="10dip"
+        android:layout_marginLeft="135dip"
+        android:layout_height="wrap_content"
+        android:background="#00A398"
+        android:text="Get command type"
+         android:onClick="getPrinterCommandTypeClicked"
+        />        
+        <Button 
+        android:id="@+id/btPrintReceipt"
+        android:layout_width="300dip"
+        android:layout_marginTop="10dip"
+        android:layout_marginLeft="135dip"
+        android:layout_height="wrap_content"
+        android:background="#00A398"
+        android:text="Print receipt"
+        android:onClick="printReceiptClicked"
+        />      
+       <Button 
+        android:id="@+id/btPrintLabel"
+        android:layout_width="300dip"
+        android:layout_marginTop="10dip"
+        android:layout_marginLeft="135dip"
+        android:layout_height="wrap_content"
+        android:background="#00A398"
+        android:text="Print label"
+        android:onClick="printLabelClicked"
+        />             
+    </LinearLayout>
